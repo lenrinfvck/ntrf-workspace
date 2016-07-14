@@ -8,7 +8,7 @@ jquery(默认3.0+) | npm install jquery@1.12 / npm install jquery
 seajs(3.0+) | npm install seajs  
 zepto | npm install zepto  
 
-### 目录结构
+### 目录结构 
 
 #### 1.H5静态页
 
