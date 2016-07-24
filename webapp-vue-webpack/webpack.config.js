@@ -6,7 +6,7 @@ var ExtractTextPlugin = require('extract-text-webpack-plugin');
 module.exports = {
     // 入口
     entry: {
-        main: './main',
+        main: './src/main',
     },
     // 输出
     output: {
@@ -46,10 +46,10 @@ module.exports = {
         extensions: ['', '.js', '.vue'],
         // 别名
         alias: {
-            // components: path.join(__dirname, './components'),
-            // Vue: path.join(__dirname, './lib/vue/vue'),
-            // VueRouter: path.join(__dirname, './lib/vue/vue-router.min.js'),
-            // VueResource: path.join(__dirname, './lib/vue/vue-resource.min.js'),
+            components: path.join(__dirname, './components'),
+            Vue: path.join(__dirname, './lib/vue/vue'),
+            VueRouter: path.join(__dirname, './lib/vue/vue-router.min.js'),
+            VueResource: path.join(__dirname, './lib/vue/vue-resource.min.js'),
             //jquery: path.join(__dirname, './lib/jquery.min.js'),
             lodash: path.join(__dirname, './lib/lodash.min.js'),
             hammerjs: path.join(__dirname, './lib/vue/hammer.min.js'),

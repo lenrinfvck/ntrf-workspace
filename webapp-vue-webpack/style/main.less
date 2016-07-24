@@ -8,6 +8,7 @@ body {
     max-width: 640px;
     margin: 0 auto;
     overflow-x: hidden;
+    height: 100%;
 }
 
 //背景方式添加自适应图片
@@ -44,14 +45,23 @@ body {
 }
 
 //yours
+#app {
+    height: 100%;
+}
 .p1,
 .p2 {
     color: #555;
     font-size: .5rem;
+    min-height: 100%;
     text-align: center;
     line-height: 3;
     background-color: #EBF5DF;
     text-shadow: .2px .3px 3px rgba(0, 0, 0, 0.2);
+    a {
+        font-size: .3rem;
+        display: block;
+        text-decoration: underline;
+    }
 }
 .p2 {
     background-color: #BAD4AA;
