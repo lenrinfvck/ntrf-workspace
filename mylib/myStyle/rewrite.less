@@ -1,0 +1,15 @@
+/* 重写选中颜色 */
+.select-color(@color: #e2eae2, @fontColor: #ffffff) {
+    &::-webkit-selection {
+        background: @color;
+        color: @fontColor;
+    }
+    &::-moz-selection {
+        background: @color;
+        color: @fontColor;
+    }
+    &::selection { 
+        background: @color;
+        color: @fontColor;
+    }
+}

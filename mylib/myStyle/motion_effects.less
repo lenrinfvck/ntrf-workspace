@@ -1,0 +1,46 @@
+/*  MotionEffects - 动效
+ *  需要 autoprefix
+ */
+
+/* 悬停渐变背景
+ * @start: 开始颜色
+ * @end: 结束颜色
+ */
+.hover-gradient(@start:#5187c4, @end:#1c2f45) {
+    background-image: linear-gradient(@start, @end);
+    background-size: auto 200%;
+    background-position: 0 100%;
+    transition: background-position 0.5s;
+    &:hover {
+        background-position: 0 0;
+    }
+}
+
+/* 一个单边影子的思路 */
+.box-shadow(@w:100px, @h:50px) {
+    width: @w;
+    height: @h;
+    position: relative;
+    &:after {
+        content: "";
+        width: @w * 0.9;
+        height: 1px;
+        top: @h - 1;
+        margin-left: -@w * .9 / 2;
+        display: block;
+        position: absolute;
+        left: 50%;
+        z-index: -1;
+        box-shadow: 0px 0px 8px 2px #000000;
+    }
+}
+
+/* 模糊文字 */
+.blurry-text(@color: rgba(0,0,0,0.5), @blur:5px) {
+   color: transparent;
+   text-shadow: 0 0 @blur @color;
+}
+
+
+
+

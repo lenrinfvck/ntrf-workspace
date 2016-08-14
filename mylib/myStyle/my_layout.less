@@ -1,0 +1,46 @@
+/*  Layout - 布局
+ *  需要autoprefix
+ *  整理 LenRinFvck 2016.8.14
+ */
+
+/* 垂直水平居中 ie8=
+ *  .table-center
+ *      .tc-warp(居中层)
+ */
+.table-center {
+    display: table;
+    text-align: center;
+    .tc-warp {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}
+
+//垂直居中 ie9=
+.verticalcenter{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+//clearfix - 清除浮动 ie8=
+.clearfix() {
+    &:after {
+        content: "."; 
+        display: block; 
+        clear: both; 
+        visibility: hidden; 
+        line-height: 0; 
+        height: 0;
+    }
+    _zoom: 1;
+}
+.clearfix:after { 
+    content: "."; 
+    display: block; 
+    clear: both; 
+    visibility: hidden; 
+    line-height: 0; 
+    height: 0;
+    _zoom: 1;
+}
